@@ -52,7 +52,27 @@ int main() {
     // char or character is enclosed in single quoation marks
     // char variables can be letters, special characters - new lines, etc. - or numbers
     // their behavior changes when they are declared as char data types
-    char myCharacter = '\n';
+    // you CAN assign integer values to character variables, but it is poor practice
+    // if you do, the compiler will look up that value in the ASCII table and retrieve the value assigned to that value
+    char A = 65;
+
+    // escape characters are those that are evaluated
+    char alert = '\a';
+    char backspace = '\b';
+    char formFeed = '\f';
+    char newline = '\n';
+    char carriageReturn = '\r';
+    char horizontalTab = '\t';
+    char verticalTab = '\v';
+    char backslash = '\\';
+    char singleQuote = '\'';
+    char doubleQuote = '\"';
+    char questionMark = '\?';
+    char octalValue = '\010';
+    // o represents an octal digit above
+    char hexadecimalValue = '\xff';
+    // h represents a hexidecimal digit above
+    char x = '\n';
     char myOtherCharacter = 'j';
     
     // myGender is declared as an enum type of gender, which was defined above
@@ -62,7 +82,7 @@ int main() {
     // myGender = male;
 
     printf("%c", myGender);
-    printf("%c", myCharacter);
+    printf("%c", x);
     printf("%c", myOtherCharacter);
 
     return 0;
